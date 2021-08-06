@@ -1,7 +1,8 @@
 version: '2'
 services:
   fibos:
-    build: ./
+    # build: ./
+    image: mingfunwong/fibosjs:0.3.11
     restart: always
     env_file:
       - ./.env
