@@ -2,7 +2,7 @@ version: '2'
 services:
   fibos:
     # build: ./
-    image: mingfunwong/fibosjs:0.3.11
+    image: mingfunwong/fibosjs:fibos-auto-claimbonus
     restart: always
     env_file:
       - ./.env
