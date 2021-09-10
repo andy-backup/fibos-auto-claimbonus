@@ -20,8 +20,8 @@
 
   RUN nexe ./dist -t alpine-64-10.14.0 -o ./start
 
-# build alpine
-  FROM alpine:latest
+# build app
+  FROM scratch
 
   ENV NODE_ENV=production \
       APP_PATH=/app
@@ -31,4 +31,4 @@
   COPY --from=base $APP_PATH/start ./
 
   # start up
-  CMD ./start
+  CMD ["./start"]
